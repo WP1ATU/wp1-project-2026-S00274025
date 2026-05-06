@@ -1,0 +1,27 @@
+<div class="container mt-4">
+  <h2>Discover Music</h2>
+
+  <button class="btn btn-primary mb-3" (click)="loadTracks()">
+    Refresh Songs
+  </button>
+
+  <div class="row">
+    <div class="col-md-4 mb-3" *ngFor="let track of tracks">
+      <div class="card">
+        <img [src]="track.album.images[0]?.url" class="card-img-top">
+        <div class="card-body">
+          <h5>{{ track.name }}</h5>
+          <p>{{ track.artists[0].name }}</p>
+
+          <button class="btn btn-success me-2" (click)="addToLibrary(track)">
+            Add
+          </button>
+
+          <button class="btn btn-danger" (click)="skip(track)">
+            Skip
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
