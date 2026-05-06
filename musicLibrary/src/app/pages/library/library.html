@@ -1,0 +1,20 @@
+<div class="container mt-4">
+  <h2>Your Library</h2>
+
+  <div class="row">
+    <div class="col-md-4 mb-3" *ngFor="let song of tracks">
+      <div class="card">
+        <img [src]="song.image" class="card-img-top">
+        <div class="card-body">
+          <h3>{{ song.title}}</h3>
+          <h5>{{ song.artist }}</h5>
+          <p>{{ song.date }}</p>
+          <p>ID: {{ song._id }}</p>
+          <button class="btn btn-danger" (click)="remove(song._id)">
+            Remove
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
