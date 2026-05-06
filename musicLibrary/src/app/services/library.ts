@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class LibraryService {
 
-  private apiUrl = 'http://localhost:5555/songs';
+  private apiUrl = 'http://34.249.164.154:5555/songs';
 
   constructor(private http: HttpClient) {}
 

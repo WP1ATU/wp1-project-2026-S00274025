@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+/* BACKGROUND */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* CARD */
+.card {
+  background-color: #181818;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background-color: #282828;
+}
+
+/* TEXT */
+h2, h5 {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+p {
+  color: #b3b3b3;
+}
+
+/* BUTTONS */
+.btn-spotify {
+  background-color: #1db954;
+  color: white;
+  border-radius: 50px;
+  padding: 6px 16px;
+  border: none;
+  font-weight: 500;
+}
+
+.btn-spotify:hover {
+  background-color: #1ed760;
+}
+
+.btn-skip {
+  background-color: #535353;
+  color: white;
+  border-radius: 50px;
+  padding: 6px 16px;
+  border: none;
+}
+
+.btn-skip:hover {
+  background-color: #727272;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #000000 !important;
+}
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
